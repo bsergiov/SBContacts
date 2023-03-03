@@ -19,12 +19,12 @@ public extension SBContactsFactoryBuilder {
 
 public class SBContactsFactoryDefault: SBContactsFactory {
     public static func makeModule() -> SBContactsApi.Type {
-        Contacts.self
+        SBContacts.self
     }
 }
 
-class Contacts: SBContactsApi {
-    static func makeViewController(config: SBContactsConfigurationEnum) -> UIViewController {
+public class SBContacts: SBContactsApi {
+    public static func makeViewController(config: SBContactsConfigurationEnum) -> UIViewController {
         UIViewController()
     }
 }
