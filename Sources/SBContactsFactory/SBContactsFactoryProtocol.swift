@@ -22,9 +22,3 @@ public class SBContactsFactoryDefault: SBContactsFactory {
         SBContacts.self
     }
 }
-
-public class SBContacts: SBContactsApi {
-    public static func makeViewController(config: SBContactsConfigurationEnum) -> UIViewController {
-        UIViewController()
-    }
-}
