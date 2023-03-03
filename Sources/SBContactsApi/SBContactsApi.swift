@@ -6,6 +6,7 @@ public struct ContactsInfo {
 
 // Данные модуля
 public struct SBContactsData {
+    public init() { }
     public var contactsInfo: String?
     public var version: String?
     public var isSignIn: Bool?
