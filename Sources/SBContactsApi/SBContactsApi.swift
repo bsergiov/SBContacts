@@ -29,7 +29,7 @@ public protocol SBContactsDelegate: AnyObject {
 }
 
 // Конфигурация
-public typealias SBContactsConfigurationParams = (data: SBContactsData, services: SBContactsServices, delegate: SBContactsDelegate)
+public typealias SBContactsConfigurationParams = (data: SBContactsData, services: SBContactsServices?, delegate: SBContactsDelegate?)
 
 public enum SBContactsConfigurationEnum {
     case main(SBContactsConfigurationParams)
