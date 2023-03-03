@@ -11,7 +11,7 @@ public protocol SBContactsFactoryBuilder {
 }
 
 public extension SBContactsFactoryBuilder {
-    static func builSBContactsFactory() -> SBContactsFactory.Type {
+    static func buildSBContactsFactory() -> SBContactsFactory.Type {
         // активная фабрика
         SBContactsFactoryDefault.self
     }
